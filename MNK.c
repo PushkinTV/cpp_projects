@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h> 
 // Проверим
+// Проверим номер 2
 // Function to multiply two matrices
 // C = A * B
 void multiplyMatrices(int A_rows, int A_cols, double A[A_rows][A_cols],
