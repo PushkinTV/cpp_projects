@@ -2,19 +2,21 @@
 #include <stdlib.h> 
 // Проверим
 // Проверим номер 2
+// Проверка номер 3
+// Adding a comment for a test commit.
 // Function to multiply two matrices
 // C = A * B
 void multiplyMatrices(int A_rows, int A_cols, double A[A_rows][A_cols],
                       int B_rows, int B_cols, double B[B_rows][B_cols],
                       double C[A_rows][B_cols]) {
-    for (int i = 0; i < A_rows; i++) {
-        for (int j = 0; j < B_cols; j++) {
+    for (int i = 0; i < A_rows; i++)
+        for (int j = 0; j < B_cols; j++)
             C[i][j] = 0;
-            for (int k = 0; k < A_cols; k++) {
+
+    for (int i = 0; i < A_rows; i++)
+        for (int k = 0; k < A_cols; k++)
+            for (int j = 0; j < B_cols; j++)
                 C[i][j] += A[i][k] * B[k][j];
-            }
-        }
-    }
 }
 
 // Function to transpose a matrix
